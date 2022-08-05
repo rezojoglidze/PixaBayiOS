@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01F45A8455CA6EF4DAD41CB8 /* Pods_PixaBay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF26C94009F9C55DA47B86F /* Pods_PixaBay.framework */; };
 		A98E2CF9289D582200C1FE9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2CF8289D582200C1FE9F /* AppDelegate.swift */; };
 		A98E2CFB289D582200C1FE9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2CFA289D582200C1FE9F /* SceneDelegate.swift */; };
 		A98E2CFD289D582200C1FE9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2CFC289D582200C1FE9F /* ViewController.swift */; };
 		A98E2D00289D582200C1FE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98E2CFE289D582200C1FE9F /* Main.storyboard */; };
 		A98E2D02289D582300C1FE9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98E2D01289D582300C1FE9F /* Assets.xcassets */; };
 		A98E2D05289D582300C1FE9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98E2D03289D582300C1FE9F /* LaunchScreen.storyboard */; };
+		A98E2D10289D596100C1FE9F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D0F289D596100C1FE9F /* RegistrationViewController.swift */; };
+		A98E2D12289D596B00C1FE9F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D11289D596B00C1FE9F /* RegistrationViewModel.swift */; };
+		A98E2D16289D5A3400C1FE9F /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D15289D5A3400C1FE9F /* AppDIContainer.swift */; };
+		A98E2D1A289D5B7500C1FE9F /* RegistrationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D19289D5B7500C1FE9F /* RegistrationUseCase.swift */; };
+		A98E2D1E289D5BDB00C1FE9F /* RegistrationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D1D289D5BDB00C1FE9F /* RegistrationRepository.swift */; };
+		A98E2D22289D5C7600C1FE9F /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D21289D5C7600C1FE9F /* APIEndpoints.swift */; };
+		A98E2D25289D5CB300C1FE9F /* DefaultRegistrationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D24289D5CB300C1FE9F /* DefaultRegistrationRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05625C41B2D4FBD59245D889 /* Pods-PixaBay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixaBay.debug.xcconfig"; path = "Target Support Files/Pods-PixaBay/Pods-PixaBay.debug.xcconfig"; sourceTree = "<group>"; };
+		6EF26C94009F9C55DA47B86F /* Pods_PixaBay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixaBay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98E2CF5289D582200C1FE9F /* PixaBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixaBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98E2CF8289D582200C1FE9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A98E2CFA289D582200C1FE9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,14 @@
 		A98E2D01289D582300C1FE9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A98E2D04289D582300C1FE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A98E2D06289D582300C1FE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98E2D0F289D596100C1FE9F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		A98E2D11289D596B00C1FE9F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A98E2D15289D5A3400C1FE9F /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		A98E2D19289D5B7500C1FE9F /* RegistrationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationUseCase.swift; sourceTree = "<group>"; };
+		A98E2D1D289D5BDB00C1FE9F /* RegistrationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRepository.swift; sourceTree = "<group>"; };
+		A98E2D21289D5C7600C1FE9F /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		A98E2D24289D5CB300C1FE9F /* DefaultRegistrationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRegistrationRepository.swift; sourceTree = "<group>"; };
+		E29445E4DAB76F4D1205A8E4 /* Pods-PixaBay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixaBay.release.xcconfig"; path = "Target Support Files/Pods-PixaBay/Pods-PixaBay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F45A8455CA6EF4DAD41CB8 /* Pods_PixaBay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59A1D5B2A6C4B53921F34516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05625C41B2D4FBD59245D889 /* Pods-PixaBay.debug.xcconfig */,
+				E29445E4DAB76F4D1205A8E4 /* Pods-PixaBay.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A98E2CEC289D582200C1FE9F = {
 			isa = PBXGroup;
 			children = (
 				A98E2CF7289D582200C1FE9F /* PixaBay */,
 				A98E2CF6289D582200C1FE9F /* Products */,
+				59A1D5B2A6C4B53921F34516 /* Pods */,
+				CE8C5F7FC3C1E03D5A586677 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +87,10 @@
 		A98E2CF7289D582200C1FE9F /* PixaBay */ = {
 			isa = PBXGroup;
 			children = (
-				A98E2CF8289D582200C1FE9F /* AppDelegate.swift */,
-				A98E2CFA289D582200C1FE9F /* SceneDelegate.swift */,
+				A98E2D13289D5A1D00C1FE9F /* Application */,
+				A98E2D0C289D589500C1FE9F /* Presentation */,
+				A98E2D17289D5B5800C1FE9F /* Domain */,
+				A98E2D1F289D5C4200C1FE9F /* Data */,
 				A98E2CFC289D582200C1FE9F /* ViewController.swift */,
 				A98E2CFE289D582200C1FE9F /* Main.storyboard */,
 				A98E2D01289D582300C1FE9F /* Assets.xcassets */,
@@ -67,6 +100,115 @@
 			path = PixaBay;
 			sourceTree = "<group>";
 		};
+		A98E2D0C289D589500C1FE9F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D0D289D589A00C1FE9F /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A98E2D0D289D589A00C1FE9F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D0E289D594B00C1FE9F /* RegistrationScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A98E2D0E289D594B00C1FE9F /* RegistrationScene */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D0F289D596100C1FE9F /* RegistrationViewController.swift */,
+				A98E2D11289D596B00C1FE9F /* RegistrationViewModel.swift */,
+			);
+			path = RegistrationScene;
+			sourceTree = "<group>";
+		};
+		A98E2D13289D5A1D00C1FE9F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D14289D5A2900C1FE9F /* DIContainer */,
+				A98E2CF8289D582200C1FE9F /* AppDelegate.swift */,
+				A98E2CFA289D582200C1FE9F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A98E2D14289D5A2900C1FE9F /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D15289D5A3400C1FE9F /* AppDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		A98E2D17289D5B5800C1FE9F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D18289D5B6900C1FE9F /* UseCases */,
+				A98E2D1B289D5B9700C1FE9F /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A98E2D18289D5B6900C1FE9F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D19289D5B7500C1FE9F /* RegistrationUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A98E2D1B289D5B9700C1FE9F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D1C289D5BD300C1FE9F /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		A98E2D1C289D5BD300C1FE9F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D1D289D5BDB00C1FE9F /* RegistrationRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A98E2D1F289D5C4200C1FE9F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D20289D5C5600C1FE9F /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A98E2D20289D5C5600C1FE9F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D21289D5C7600C1FE9F /* APIEndpoints.swift */,
+				A98E2D23289D5C8700C1FE9F /* Repositories */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A98E2D23289D5C8700C1FE9F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D24289D5CB300C1FE9F /* DefaultRegistrationRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CE8C5F7FC3C1E03D5A586677 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EF26C94009F9C55DA47B86F /* Pods_PixaBay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A98E2D09289D582300C1FE9F /* Build configuration list for PBXNativeTarget "PixaBay" */;
 			buildPhases = (
+				7A2A79CCC1171A606AEA0769 /* [CP] Check Pods Manifest.lock */,
 				A98E2CF1289D582200C1FE9F /* Sources */,
 				A98E2CF2289D582200C1FE9F /* Frameworks */,
 				A98E2CF3289D582200C1FE9F /* Resources */,
+				1028441E49949AA3BF727DAA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +277,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1028441E49949AA3BF727DAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PixaBay/Pods-PixaBay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PixaBay/Pods-PixaBay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PixaBay/Pods-PixaBay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A2A79CCC1171A606AEA0769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PixaBay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A98E2CF1289D582200C1FE9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98E2D12289D596B00C1FE9F /* RegistrationViewModel.swift in Sources */,
 				A98E2CFD289D582200C1FE9F /* ViewController.swift in Sources */,
+				A98E2D1E289D5BDB00C1FE9F /* RegistrationRepository.swift in Sources */,
+				A98E2D22289D5C7600C1FE9F /* APIEndpoints.swift in Sources */,
+				A98E2D16289D5A3400C1FE9F /* AppDIContainer.swift in Sources */,
 				A98E2CF9289D582200C1FE9F /* AppDelegate.swift in Sources */,
+				A98E2D1A289D5B7500C1FE9F /* RegistrationUseCase.swift in Sources */,
+				A98E2D10289D596100C1FE9F /* RegistrationViewController.swift in Sources */,
+				A98E2D25289D5CB300C1FE9F /* DefaultRegistrationRepository.swift in Sources */,
 				A98E2CFB289D582200C1FE9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +475,7 @@
 		};
 		A98E2D0A289D582300C1FE9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05625C41B2D4FBD59245D889 /* Pods-PixaBay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +504,7 @@
 		};
 		A98E2D0B289D582300C1FE9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29445E4DAB76F4D1205A8E4 /* Pods-PixaBay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
