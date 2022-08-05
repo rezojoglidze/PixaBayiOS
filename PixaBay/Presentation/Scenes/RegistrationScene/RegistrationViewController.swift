@@ -9,9 +9,19 @@ import UIKit
 
 class RegistrationViewController: UIViewController {
 
+    private var viewModel: RegistrationViewModel!
+
+    // MARK: - Lifecycle
+    static func create(with viewModel: RegistrationViewModel) -> RegistrationViewController {
+        let viewController: RegistrationViewController = .init()
+        viewController.viewModel = viewModel
+        return viewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor = .purple
         // Do any additional setup after loading the view.
     }
     

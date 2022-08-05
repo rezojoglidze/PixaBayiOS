@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+final class AppDIContainer {
+    
+    //MARK: DIContainers fo scenes
+    
+    func makeRegistrationDIContainer() -> RegistrationDIContainer {
+        return RegistrationDIContainer()
+    }
+}

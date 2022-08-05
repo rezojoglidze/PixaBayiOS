@@ -21,6 +21,9 @@
 		A98E2D1E289D5BDB00C1FE9F /* RegistrationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D1D289D5BDB00C1FE9F /* RegistrationRepository.swift */; };
 		A98E2D22289D5C7600C1FE9F /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D21289D5C7600C1FE9F /* APIEndpoints.swift */; };
 		A98E2D25289D5CB300C1FE9F /* DefaultRegistrationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D24289D5CB300C1FE9F /* DefaultRegistrationRepository.swift */; };
+		A98E2D27289D628C00C1FE9F /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D26289D628C00C1FE9F /* AppFlowCoordinator.swift */; };
+		A98E2D29289D62EA00C1FE9F /* RegistrationDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D28289D62EA00C1FE9F /* RegistrationDIContainer.swift */; };
+		A98E2D2C289D630400C1FE9F /* RegistrationFlowCoordinatorDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E2D2B289D630400C1FE9F /* RegistrationFlowCoordinatorDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		A98E2D1D289D5BDB00C1FE9F /* RegistrationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRepository.swift; sourceTree = "<group>"; };
 		A98E2D21289D5C7600C1FE9F /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		A98E2D24289D5CB300C1FE9F /* DefaultRegistrationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRegistrationRepository.swift; sourceTree = "<group>"; };
+		A98E2D26289D628C00C1FE9F /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		A98E2D28289D62EA00C1FE9F /* RegistrationDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationDIContainer.swift; sourceTree = "<group>"; };
+		A98E2D2B289D630400C1FE9F /* RegistrationFlowCoordinatorDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowCoordinatorDependencies.swift; sourceTree = "<group>"; };
 		E29445E4DAB76F4D1205A8E4 /* Pods-PixaBay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixaBay.release.xcconfig"; path = "Target Support Files/Pods-PixaBay/Pods-PixaBay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +68,6 @@
 				05625C41B2D4FBD59245D889 /* Pods-PixaBay.debug.xcconfig */,
 				E29445E4DAB76F4D1205A8E4 /* Pods-PixaBay.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,6 +92,7 @@
 		A98E2CF7289D582200C1FE9F /* PixaBay */ = {
 			isa = PBXGroup;
 			children = (
+				A98E2D2D289D63E600C1FE9F /* Utils */,
 				A98E2D13289D5A1D00C1FE9F /* Application */,
 				A98E2D0C289D589500C1FE9F /* Presentation */,
 				A98E2D17289D5B5800C1FE9F /* Domain */,
@@ -119,6 +125,7 @@
 		A98E2D0E289D594B00C1FE9F /* RegistrationScene */ = {
 			isa = PBXGroup;
 			children = (
+				A98E2D2A289D62F900C1FE9F /* Flow */,
 				A98E2D0F289D596100C1FE9F /* RegistrationViewController.swift */,
 				A98E2D11289D596B00C1FE9F /* RegistrationViewModel.swift */,
 			);
@@ -128,9 +135,10 @@
 		A98E2D13289D5A1D00C1FE9F /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				A98E2D14289D5A2900C1FE9F /* DIContainer */,
 				A98E2CF8289D582200C1FE9F /* AppDelegate.swift */,
 				A98E2CFA289D582200C1FE9F /* SceneDelegate.swift */,
+				A98E2D26289D628C00C1FE9F /* AppFlowCoordinator.swift */,
+				A98E2D14289D5A2900C1FE9F /* DIContainer */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A98E2D15289D5A3400C1FE9F /* AppDIContainer.swift */,
+				A98E2D28289D62EA00C1FE9F /* RegistrationDIContainer.swift */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -199,6 +208,21 @@
 				A98E2D24289D5CB300C1FE9F /* DefaultRegistrationRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A98E2D2A289D62F900C1FE9F /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				A98E2D2B289D630400C1FE9F /* RegistrationFlowCoordinatorDependencies.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		A98E2D2D289D63E600C1FE9F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CE8C5F7FC3C1E03D5A586677 /* Frameworks */ = {
@@ -331,8 +355,11 @@
 				A98E2D16289D5A3400C1FE9F /* AppDIContainer.swift in Sources */,
 				A98E2CF9289D582200C1FE9F /* AppDelegate.swift in Sources */,
 				A98E2D1A289D5B7500C1FE9F /* RegistrationUseCase.swift in Sources */,
+				A98E2D29289D62EA00C1FE9F /* RegistrationDIContainer.swift in Sources */,
 				A98E2D10289D596100C1FE9F /* RegistrationViewController.swift in Sources */,
 				A98E2D25289D5CB300C1FE9F /* DefaultRegistrationRepository.swift in Sources */,
+				A98E2D27289D628C00C1FE9F /* AppFlowCoordinator.swift in Sources */,
+				A98E2D2C289D630400C1FE9F /* RegistrationFlowCoordinatorDependencies.swift in Sources */,
 				A98E2CFB289D582200C1FE9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

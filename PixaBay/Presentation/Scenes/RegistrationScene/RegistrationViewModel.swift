@@ -6,6 +6,11 @@
 //
 
 import Foundation
+
+struct RegistrationViewModelActions {
+
+}
+
 protocol RegistrationViewModel { }
 
 
